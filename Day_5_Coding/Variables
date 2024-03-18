@@ -1,0 +1,13 @@
+x = 10
+print(type(x))
+name = "ayesha"
+y = 10.003
+z = complex(1,2)
+print(type(y))
+print(type(z))
+list1 = [[1,"hello"],["name","world"]]
+print(list1)
+tuple = ((1,"hello"),("name","world"))
+print(tuple)
+dict = {"name":"Ayesha","age":20}
+print(dict) 
