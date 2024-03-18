@@ -1,0 +1,7 @@
+print("hello")  # prints the statemnet
+print("hello", "world", sep="&", end="12")
+# ends with 12 and sep the string with &
+''' prints the statemnet
+ ends with 12 and sep the string with & '''
+ # multi line comment
+print("hel\nlo")
