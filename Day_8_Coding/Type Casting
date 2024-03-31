@@ -1,7 +1,0 @@
-x = 5
-y = "10"
-print(x+int(y)) # explicit type casting conversion: conversion that takes place by developers
-
-x = 10.90
-y = 5
-print(x+y) # Implicit conversion that automatically done by python 
