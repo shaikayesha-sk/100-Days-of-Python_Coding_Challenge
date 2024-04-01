@@ -1,0 +1,4 @@
+nm = "harry"
+print(nm[-4:-2])
+fruit = "apple"
+print(fruit[-3:-1])
