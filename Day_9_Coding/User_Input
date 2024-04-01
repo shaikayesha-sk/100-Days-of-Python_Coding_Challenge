@@ -1,0 +1,5 @@
+a = input("enter name")
+print(a)
+
+x = int("enter first number")
+print(x)
