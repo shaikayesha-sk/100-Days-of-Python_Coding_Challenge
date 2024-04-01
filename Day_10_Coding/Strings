@@ -1,0 +1,7 @@
+#string is like an array of characters 
+# array is colllection of items
+apple = """ hello
+world"""
+print(apple)
+for charcter in apple:
+ print(charcter)
