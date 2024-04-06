@@ -1,0 +1,10 @@
+x = input("enter month")
+match x:
+    case "january":
+        print("it's January")
+    case "feb":
+        print("it's February")
+    case _ if x != "dec":
+        print("not December")
+    case _:
+        print(x)
