@@ -1,0 +1,37 @@
+import random
+
+# List of questions and their correct answers
+questions = [
+    {"question": "What is the capital of France?", "options": ["A. London", "B. Paris", "C. Rome", "D. Berlin"], "answer": "B"},
+    {"question": "Which planet is known as the Red Planet?", "options": ["A. Venus", "B. Mars", "C. Jupiter", "D. Saturn"], "answer": "B"},
+    {"question": "What is the chemical symbol for water?", "options": ["A. Wo", "B. Wa", "C. H2O", "D. Hy"], "answer": "C"},
+    {"question": "Who painted the Mona Lisa?", "options": ["A. Leonardo da Vinci", "B. Michelangelo", "C. Pablo Picasso", "D. Vincent van Gogh"], "answer": "A"},
+    {"question": "What is the largest mammal in the world?", "options": ["A. Elephant", "B. Blue Whale", "C. Giraffe", "D. Hippopotamus"], "answer": "B"}
+]
+
+def display_question(question):
+    print(question["question"])
+    for option in question["options"]:
+        print(option)
+    return input("Your answer (Enter A, B, C, or D): ")
+
+def kbc_game(questions):
+    total_amount = 0
+    for question in questions:
+        print("\n" + "="*20)
+        user_answer = display_question(question)
+        if user_answer.upper() == question["answer"]:
+            print("Correct Answer!")
+            total_amount += 1000  # Each correct answer adds Rs. 1000
+        else:
+            print("Incorrect Answer!")
+            break
+    print("\n" + "="*20)
+    print("Congratulations! You've won Rs.", total_amount)
+
+def main():
+    random.shuffle(questions)  # Shuffle the questions
+    kbc_game(questions)
+
+if __name__ == "__main__":
+    main()
